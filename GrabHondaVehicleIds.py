@@ -1,5 +1,5 @@
 import json
-import urllib
+import urllib.request
 
 
 def get_vehicle_ids_for_model_year(make, model, year):
