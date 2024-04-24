@@ -45,6 +45,7 @@ class TestGetModelsForMake(unittest.TestCase):
 
 class TestGetAllModels(unittest.TestCase):
 
+
     @patch('main.get_models_for_make')
     def test_get_all_models(self, mock_get_models_for_make):
         # Mock get_models_for_make function and pass it in ^ as the list
