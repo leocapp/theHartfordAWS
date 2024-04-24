@@ -8,7 +8,7 @@ rds_host = 'nhtsa-db.cze20essmpxj.us-east-1.rds.amazonaws.com'
 rds_user = 'admin'
 rds_password = 'WebWizards101'
 rds_db_name = 'nhtsa_info'
-conn = pymysql.connect(host=rds_host, user=rds_user, password=rds_password, db=rds_db_name, connect_timeout=5)
+conn = pymysql.connect(host=rds_host, user=rds_user, password=rds_password, db=rds_db_name, connect_timeout=20)
 safetydict = {0: "id", 1: "Year", 2: "Vehicle_ID", 3: "OverallRating", 4: "Make", 5: "Model", 6: "VehicleDescription", 7: "ComplaintsCount", 8: "VehiclePicture",9: "FrontCrashPicture", 10: "SideCrashPicture", 11: "SidePolePicture", 12: "FrontCrashVideo", 13: "SideCrashVideo", 14: "SidePoleVideo", 15: "OverallFrontCrashRating", 16: "OverallSideCrashRating", 17: "RolloverRating", 18: "RecallsCount", 19: "InvestigationCount"}
 
 
