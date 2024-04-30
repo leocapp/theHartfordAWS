@@ -16,7 +16,7 @@ safetydict = {0: "id", 1: "Year", 2: "Vehicle_ID", 3: "OverallRating", 4: "Make"
 def database_to_api_gateway(req_body, context):
     with conn.cursor() as cur:
         sqlBuilder = "SELECT * from SafetyRatings where "
-        if req_body["Year"] != "":
+        if req_body["Year"] !=  "": 
             sqlBuilder += "Year={}".format(req_body["Year"])
             if req_body["Make"] != "" or req_body["Model"] != "":
                 sqlBuilder += " AND "
